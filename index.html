@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Vortex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="vortex" aria-hidden="true"></canvas>
+
+    <main class="ui">
+      <section class="panel" aria-label="Text vortex input">
+        <h1 class="title">Welcome to the Vortex</h1>
+        <p class="subtitle">Type to feed the vortex in real time.</p>
+        <div class="row">
+          <div class="typing" id="typingWrap">
+            <input
+              id="textInput"
+              class="typingInput"
+              type="text"
+              aria-label="Type to feed the vortex"
+              autocomplete="off"
+              spellcheck="false"
+              inputmode="text"
+            />
+            <div class="typingVisual" aria-hidden="true">
+              <span id="typingText" class="typingText"></span>
+              <span class="typingCaret"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
